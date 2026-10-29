@@ -8,12 +8,9 @@
   const oneDay = new Set(notes.oneDayMove);
   const groups = { parser: 0, hint: 0, unplaced: 0, oneDay: 0 };
   for (const r of merged) {
-    if (oneDay.has(r.id)) {
-      groups.oneDay++;
-      continue;
-    }
     const c = causeOf(r, tenantOf(r)) ?? 'unplaced';
     groups[c]++;
+    if (oneDay.has(r.id)) groups.oneDay++;
   }
 </script>
 
