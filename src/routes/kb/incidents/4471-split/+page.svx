@@ -1,0 +1,41 @@
+---
+layout: runbook
+title: '#4471 · three problems, not one'
+owner: Taylor French
+status: living
+reviewed: 2026-10-29
+signature: Taylor French
+---
+
+<script>
+  import CauseTable from '#lib/kb/CauseTable.svelte';
+  import SplitCounts from '#lib/kb/SplitCounts.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+  const signature = 'Taylor French';
+</script>
+
+The desk merged every date report into **#4471** and marked it known: the parser reads
+month first, tenants write the day first. That is one of the bugs. It is not the only one.
+
+<Callout kind="warn">
+#4471 is three problems. One queued fix cannot cover them.
+</Callout>
+
+## Split
+
+<SplitCounts />
+
+## What the merge table already shows
+
+<CauseTable ticket={4471} />
+
+The table's second cause (`hint`) has no ticket of its own. The footnote is the one-day
+shift reports: counted under `parser`, not a month swap.
+
+## What to do
+
+File one ticket per problem. Keep the counts on the ticket. Do not merge them again by
+subject line.
+
+<RenderStamp {signature} />
