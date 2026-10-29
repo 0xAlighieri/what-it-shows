@@ -4,7 +4,7 @@ title: '#4471 · three problems, not one'
 owner: Taylor French
 status: living
 reviewed: 2026-10-29
-signature: Taylor French
+signature: "v1.eyJzdWIiOiIzODAwIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyNzMwODIsImV4cCI6MTc5MzM1OTQ4Mn0.lN45roPrCoY2II2fqUHemJRvVpojMq7vIRzsShhnMV4"
 ---
 
 <script>
@@ -12,7 +12,7 @@ signature: Taylor French
   import SplitCounts from '#lib/kb/SplitCounts.svelte';
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
-  const signature = 'Taylor French';
+  const signature = 'v1.eyJzdWIiOiIzODAwIiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyNzMwODIsImV4cCI6MTc5MzM1OTQ4Mn0.lN45roPrCoY2II2fqUHemJRvVpojMq7vIRzsShhnMV4';
 </script>
 
 The desk merged every date report into **#4471** and marked it known: the parser reads
